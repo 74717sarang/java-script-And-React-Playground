@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+     const checkFactorial = function() {
+
+        var num=document.getElementById("num").value;
+        var result = 1;
+        if(num < 0) {
+            document.getElementById("res").innerHTML = "Factorial is not defined for negative numbers.";
+            return;
+        }
+        for(var i = 1; i <= num; i++) {
+            result *= i;
+        }
+        document.getElementById("res").innerHTML = "Factorial of " + num + " is " + result + ".";
+     }
+
+     const checkSQRT = function() {
+        var num = document.getElementById("num").value;
+        if(num < 0) {
+            document.getElementById("res").innerHTML = "Square root is not defined for negative numbers.";
+            return;
+        }
+        // var sqrtResult = Math.sqrt(num);
+        // var sqrtResult = Math.sqrt(num).toFixed(2); // Rounded to 2 decimal places?
+        var sqrtResult = num*num;
+        document.getElementById("res").innerHTML = "Square root of " + num + " is " + sqrtResult + ".";
+     }
+    </script>
+
+   <form>
+    Number: <input type="text" name="num" id="num">
+    <br>
+    <span id="res"> </span>
+    <br>
+    <button type="button" name="btn" id="btn" onclick="checkFactorial()">Calculate Factorial</button>
+    
+     <button type="button" name="btn" id="btn" onclick="checkSQRT()">Calculate Sqrt</button>
+    <!-- <button type ="button" name="btn" id="bt`" onclick="checkSQRT()">Calculate Sqrt</butten> -->
+ 
+</form>
+   
+
+
+</body>
+</html>

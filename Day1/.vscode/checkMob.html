@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const checkMob=function(){
+
+            var mob=document.getElementById("mob").value;
+            if(mob.length==10){
+document.getElementById("err").innerHTML = "Correct......";            }
+            else{
+            document.getElementById("err").innerHTML ="InCorrect.....";
+            }
+        }
+        </script>
+
+
+ <form>
+        Mobile number: <input type="text" name="mob" id="mob">
+        <br>
+        <span id="err"> </span>
+        <br>
+        <button type="button" name="btn" id="btn" onclick="checkMob()">check mobile</button>
+    </form>
+     </br>
+    <!-- <form >
+    Mob No:<input type="text" id="mob" name="mob">
+    <span id="err">
+    </span> <br>
+    <button type="button" name="btn" id="btn" onclick="checkMob()">Check Mob</button>
+    </form> -->
+    
+
+</body>
+</html>
