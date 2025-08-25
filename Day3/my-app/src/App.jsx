@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Message from './Message.jsx'
+import Gretting from './grettings.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,12 @@ function App() {
         <p>This is another paragraph.</p>
       </div>
             <Message/>
+
+      <div>
+        <Gretting name="ABC" />
+        {/* <Gretting name="XYZ" />
+        <Gretting name="PQR" /> */}
+        </div>
 
           </div>
       <div style={{ color:"tomato",display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '20px',fontSize: "32px" }  }>
@@ -37,6 +44,8 @@ function App() {
          <button onClick={() => setCount(0)} style={{color:"green",padding: "10px 20px", fontSize: "16px", cursor: "pointer" }}>
           Set to 0</button>  count is {count}
           </div>
+
+        
     </>
   )
 }
