@@ -1,6 +1,6 @@
 import React from 'react'
 
-function grettings({name}) {
+function Grettings({name}) {
   return (
     <div>
       <h2>Hii from grettings.jsx</h2>
@@ -9,4 +9,4 @@ function grettings({name}) {
   )
 }
 
-export default grettings
+export default Grettings
