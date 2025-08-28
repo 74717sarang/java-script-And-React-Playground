@@ -9,7 +9,7 @@ import EventHandeling from "./EventHandeling.jsx";
 import FromEx from "./FromEx.jsx";
 import UseEffectHandling from "./useEffectHandling.jsx";
 import UsersList from "./UsersList.jsx";
-// UsersList
+import FromHandling from "./FromHandling.jsx";
 
 
 function App() {
@@ -55,7 +55,8 @@ function App() {
       <h2>Day 6 Fetch API</h2>
       <UsersList />
     
-
+     <h2>Day 7 Form Handeling</h2>
+    <FromHandling/>
 
 
 
