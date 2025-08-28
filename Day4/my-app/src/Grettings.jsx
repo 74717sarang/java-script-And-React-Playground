@@ -1,4 +1,5 @@
-
-function Grettings(props) {
-  return <h1>Hello, {props.name}!</h1>;
+function Greetings(props) {
+  return <h2>Hello, {props.name}! 👋</h2>;
 }
+
+export default Greetings;
