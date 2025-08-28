@@ -5,9 +5,12 @@ import Grettings from "./Grettings.jsx";
 import ProfileCard from "./ProfileCard.jsx";
 import Fruite from "./Fruite.jsx";
 import ToDoList from "./ToDoList.jsx";
+import EventHandeling from "./EventHandeling.jsx";
+import FromEx from "./FromEx.jsx";
+import useEffectHandling from "./useEffectHandling.jsx";
 
 function App() {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
 
   return (
     <>
@@ -39,6 +42,13 @@ function App() {
           {show ? "Hide ToDO List" : "Show ToDO List"}
         </button>
       </div>
+
+      <h2>Day 5 Event Handeling</h2>
+      <EventHandeling />
+      <FromEx />
+      <h2>Day 6 useEffect</h2>      
+        
+         <useEffectHandling /> 
     </>
   );
 }
