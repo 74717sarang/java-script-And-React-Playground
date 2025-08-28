@@ -7,7 +7,10 @@ import Fruite from "./Fruite.jsx";
 import ToDoList from "./ToDoList.jsx";
 import EventHandeling from "./EventHandeling.jsx";
 import FromEx from "./FromEx.jsx";
-import useEffectHandling from "./useEffectHandling.jsx";
+import UseEffectHandling from "./useEffectHandling.jsx";
+import UsersList from "./UsersList.jsx";
+// UsersList
+
 
 function App() {
   const [show, setShow] = useState(false);
@@ -47,8 +50,16 @@ function App() {
       <EventHandeling />
       <FromEx />
       <h2>Day 6 useEffect</h2>      
-        
-         <useEffectHandling /> 
+         <UseEffectHandling />
+
+      <h2>Day 6 Fetch API</h2>
+      <UsersList />
+    
+
+
+
+
+
     </>
   );
 }
